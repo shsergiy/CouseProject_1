@@ -1,0 +1,10 @@
+C:\Users\Sergiy\documents\visual studio 2013\Projects\DotNet_Server_Main\DotNet_Server_Main\bin\Debug\DotNet_Server_Main.exe.config
+C:\Users\Sergiy\documents\visual studio 2013\Projects\DotNet_Server_Main\DotNet_Server_Main\obj\Debug\DotNet_Server_Main.exe
+C:\Users\Sergiy\documents\visual studio 2013\Projects\DotNet_Server_Main\DotNet_Server_Main\obj\Debug\DotNet_Server_Main.pdb
+C:\Users\Sergiy\documents\visual studio 2013\Projects\DotNet_Server_Main\DotNet_Server_Main\bin\Debug\Database_Main.mdf
+C:\Users\Sergiy\documents\visual studio 2013\Projects\DotNet_Server_Main\DotNet_Server_Main\bin\Debug\Database_Main_log.ldf
+C:\Users\Sergiy\documents\visual studio 2013\Projects\DotNet_Server_Main\DotNet_Server_Main\bin\Debug\DotNet_Server_Main.exe
+C:\Users\Sergiy\documents\visual studio 2013\Projects\DotNet_Server_Main\DotNet_Server_Main\bin\Debug\DotNet_Server_Main.pdb
+C:\Users\Sergiy\documents\visual studio 2013\Projects\DotNet_Server_Main\DotNet_Server_Main\bin\Debug\ClientClasses.dll
+C:\Users\Sergiy\documents\visual studio 2013\Projects\DotNet_Server_Main\DotNet_Server_Main\bin\Debug\ClientClasses.pdb
+C:\Users\Sergiy\documents\visual studio 2013\Projects\DotNet_Server_Main\DotNet_Server_Main\obj\Debug\DotNet_Server_Main.csprojResolveAssemblyReference.cache

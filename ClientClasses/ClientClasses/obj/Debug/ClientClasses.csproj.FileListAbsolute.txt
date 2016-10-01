@@ -1,0 +1,5 @@
+c:\users\sergiy\documents\visual studio 2013\Projects\ClientClasses\ClientClasses\bin\Debug\ClientClasses.dll
+c:\users\sergiy\documents\visual studio 2013\Projects\ClientClasses\ClientClasses\bin\Debug\ClientClasses.pdb
+c:\users\sergiy\documents\visual studio 2013\Projects\ClientClasses\ClientClasses\obj\Debug\ClientClasses.dll
+c:\users\sergiy\documents\visual studio 2013\Projects\ClientClasses\ClientClasses\obj\Debug\ClientClasses.pdb
+C:\Users\Sergiy\Documents\Visual Studio 2013\Projects\ClientClasses\ClientClasses\obj\Debug\ClientClasses.csprojResolveAssemblyReference.cache

@@ -1,0 +1,10 @@
+c:\users\sergiy\documents\visual studio 2013\Projects\DataBase_Main\DataBase_Main\bin\Debug\DataBase_Main.exe.config
+C:\Users\Sergiy\documents\visual studio 2013\Projects\DataBase_Main\DataBase_Main\bin\Debug\Database_Main.mdf
+C:\Users\Sergiy\documents\visual studio 2013\Projects\DataBase_Main\DataBase_Main\bin\Debug\Database_Main_log.ldf
+C:\Users\Sergiy\documents\visual studio 2013\Projects\DataBase_Main\DataBase_Main\bin\Debug\DataBase_Main.exe
+C:\Users\Sergiy\documents\visual studio 2013\Projects\DataBase_Main\DataBase_Main\bin\Debug\DataBase_Main.pdb
+C:\Users\Sergiy\documents\visual studio 2013\Projects\DataBase_Main\DataBase_Main\obj\Debug\DataBase_Main.csprojResolveAssemblyReference.cache
+C:\Users\Sergiy\documents\visual studio 2013\Projects\DataBase_Main\DataBase_Main\obj\Debug\DataBase_Main.Properties.Resources.resources
+C:\Users\Sergiy\documents\visual studio 2013\Projects\DataBase_Main\DataBase_Main\obj\Debug\DataBase_Main.csproj.GenerateResource.Cache
+C:\Users\Sergiy\documents\visual studio 2013\Projects\DataBase_Main\DataBase_Main\obj\Debug\DataBase_Main.exe
+C:\Users\Sergiy\documents\visual studio 2013\Projects\DataBase_Main\DataBase_Main\obj\Debug\DataBase_Main.pdb

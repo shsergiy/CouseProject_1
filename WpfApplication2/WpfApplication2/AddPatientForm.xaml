@@ -1,0 +1,143 @@
+﻿<Window x:Class="WpfApplication2.AddPatientForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:Controls="http://metro.mahapps.com/winfx/xaml/controls" 
+        Title="Створення обліку пацієнта" Height="295.343" Width="820.567"
+        Background="Black">
+    <Window.Resources>
+        <ControlTemplate x:Key="GlassButton" TargetType="{x:Type Button}">
+            <ControlTemplate.Resources>
+                <Storyboard x:Key="Timeline1">
+                    <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="glow" Storyboard.TargetProperty="(UIElement.Opacity)">
+                        <SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="1"/>
+                    </DoubleAnimationUsingKeyFrames>
+                </Storyboard>
+                <Storyboard x:Key="Timeline2">
+                    <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="glow" Storyboard.TargetProperty="(UIElement.Opacity)">
+                        <SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0"/>
+                    </DoubleAnimationUsingKeyFrames>
+                </Storyboard>
+            </ControlTemplate.Resources>
+            <Border BorderBrush="#FFFFFFFF" BorderThickness="1,1,1,1" CornerRadius="4,4,4,4">
+                <Border x:Name="border" Background="#7F000000" BorderBrush="#FF000000" BorderThickness="1,1,1,1" CornerRadius="4,4,4,4">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="0.507*"/>
+                            <RowDefinition Height="0.493*"/>
+                        </Grid.RowDefinitions>
+                        <Border Opacity="0" HorizontalAlignment="Stretch" x:Name="glow" Width="Auto" Grid.RowSpan="2" CornerRadius="4,4,4,4">
+                            <Border.Background>
+                                <RadialGradientBrush>
+                                    <RadialGradientBrush.RelativeTransform>
+                                        <TransformGroup>
+                                            <ScaleTransform ScaleX="1.702" ScaleY="2.243"/>
+                                            <SkewTransform AngleX="0" AngleY="0"/>
+                                            <RotateTransform Angle="0"/>
+                                            <TranslateTransform X="-0.368" Y="-0.152"/>
+                                        </TransformGroup>
+                                    </RadialGradientBrush.RelativeTransform>
+                                    <GradientStop Color="#B28DBDFF" Offset="0"/>
+                                    <GradientStop Color="#008DBDFF" Offset="1"/>
+                                </RadialGradientBrush>
+                            </Border.Background>
+                        </Border>
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" Width="Auto" Grid.RowSpan="2"/>
+                        <Border HorizontalAlignment="Stretch" Margin="0,0,0,0" x:Name="shine" Width="Auto" CornerRadius="4,4,0,0">
+                            <Border.Background>
+                                <LinearGradientBrush EndPoint="0.494,0.889" StartPoint="0.494,0.028">
+                                    <GradientStop Color="#99FFFFFF" Offset="0"/>
+                                    <GradientStop Color="#33FFFFFF" Offset="1"/>
+                                </LinearGradientBrush>
+                            </Border.Background>
+                        </Border>
+                    </Grid>
+                </Border>
+            </Border>
+            <ControlTemplate.Triggers>
+                <Trigger Property="IsPressed" Value="True">
+                    <Setter Property="Opacity" TargetName="shine" Value="0.4"/>
+                    <Setter Property="Background" TargetName="border" Value="#CC000000"/>
+                    <Setter Property="Visibility" TargetName="glow" Value="Hidden"/>
+                </Trigger>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Trigger.EnterActions>
+                        <BeginStoryboard Storyboard="{StaticResource Timeline1}"/>
+                    </Trigger.EnterActions>
+                    <Trigger.ExitActions>
+                        <BeginStoryboard x:Name="Timeline2_BeginStoryboard" Storyboard="{StaticResource Timeline2}"/>
+                    </Trigger.ExitActions>
+                </Trigger>
+            </ControlTemplate.Triggers>
+        </ControlTemplate>
+    </Window.Resources>
+
+    <Grid Margin="0,0,2,0">
+        <Image Source="C:\Users\Sergiy\Documents\visual studio 2013\Projects\WpfApplication1\WpfApplication1\Aero_Grass.jpg" Stretch="Fill">
+            <Image.OpacityMask>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FF000000" Offset="0"/>
+                    <GradientStop Color="#00FFFFFF" Offset="1"/>
+                </RadialGradientBrush>
+            </Image.OpacityMask>
+        </Image>
+
+        <Button HorizontalAlignment="Right" Margin="0,0,10,10" VerticalAlignment="Bottom" Width="151" Height="33" Content="Зберегти та вийти" Foreground="#FFFFFFFF" Template="{DynamicResource GlassButton}" Click="Button_Clk" RenderTransformOrigin="0.286,0.121"/>
+        <TextBox x:Name="TextBox1" Background="LightGray"  HorizontalAlignment="Left" Height="30" Margin="10,10,0,0" TextWrapping="Wrap"  Text="Patient's Name" VerticalAlignment="Top" Width="223"/>
+        <TextBox x:Name="TextBox2" Background="LightGray" HorizontalAlignment="Left" Height="30" Margin="10,45,0,0" TextWrapping="Wrap" Text="Patient's Surname" VerticalAlignment="Top" Width="223"/>
+        <TextBox x:Name="TextBox3" Background="LightGray" HorizontalAlignment="Left" Height="30" Margin="10,80,0,0" TextWrapping="Wrap" Text="Patient's Age" VerticalAlignment="Top" Width="223"/>
+        <TextBox x:Name="TextBox4" Background="LightGray" HorizontalAlignment="Left" Height="30" Margin="10,115,0,0" TextWrapping="Wrap" Text="Patient's Trable" VerticalAlignment="Top" Width="223"/>
+        <TextBox x:Name="TextBox5" Background="LightGray" HorizontalAlignment="Left" Height="30" Margin="10,150,0,0" TextWrapping="Wrap" Text="Patient's Telephone" VerticalAlignment="Top" Width="223"/>
+        <TextBox x:Name="TextBox6" Background="LightGray" HorizontalAlignment="Left" Height="30" Margin="10,185,0,0" TextWrapping="Wrap" Text="Patient's Adress" VerticalAlignment="Top" Width="223"/>
+        <TextBox x:Name="TextBox7" Background="LightGray" HorizontalAlignment="Left" Height="30" Margin="10,220,0,0" TextWrapping="Wrap" Text="Patient's Passport Code" VerticalAlignment="Top" Width="223"/>
+        <Button HorizontalAlignment="Right" Margin="0,0,10,49" VerticalAlignment="Bottom" Width="151" Height="33" Content="Поставити діагноз" Foreground="#FFFFFFFF" Template="{DynamicResource GlassButton}" Click="Button_Clk_1" RenderTransformOrigin="0.286,0.121"/>
+        <Button HorizontalAlignment="Right" Margin="0,0,10,88" VerticalAlignment="Bottom" Width="151" Height="33" Content="Додати лікаря" Foreground="#FFFFFFFF" Template="{DynamicResource GlassButton}" Click="Button_Clk_2" RenderTransformOrigin="0.286,0.121"/>
+        <ListBox Name="DoctorsViewListBox" Margin="238,29,10,126" Background="Transparent">
+
+            <ListBox.ItemContainerStyle>
+
+                <Style TargetType="{x:Type ListBoxItem}">
+                    <Setter Property="Background" Value="LightGreen"/>
+                    <Setter Property="Margin" Value="2"/>
+                    <Setter Property="Padding" Value="2"/>
+
+                    <Setter Property="Background" Value="Silver"/>
+                    <Style.Triggers>
+                        <Trigger Property="IsSelected" Value="True">
+                            <Setter Property="Foreground" Value="Black"/>
+                            <Setter Property="BorderThickness" Value="1"/>
+                            <Setter Property="BorderBrush" Value="Black"/>
+
+                            <Setter Property="Background" Value="LightGreen"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </ListBox.ItemContainerStyle>
+        </ListBox>
+        <Label Content="Лікарі" HorizontalAlignment="Left" Margin="457,3,0,0" VerticalAlignment="Top" Width="61" Foreground="White"/>
+        <Label Content="Хвороби" HorizontalAlignment="Left" Margin="457,151,0,0" VerticalAlignment="Top" Width="61" Foreground="White"/>
+
+        <ListBox Name="IllnessViewListBox" Margin="238,182,166,10" Background="Transparent">
+
+            <ListBox.ItemContainerStyle>
+
+                <Style TargetType="{x:Type ListBoxItem}">
+                    <Setter Property="Background" Value="LightGreen"/>
+                    <Setter Property="Margin" Value="2"/>
+                    <Setter Property="Padding" Value="2"/>
+
+                    <Setter Property="Background" Value="Silver"/>
+                    <Style.Triggers>
+                        <Trigger Property="IsSelected" Value="True">
+                            <Setter Property="Foreground" Value="Black"/>
+                            <Setter Property="BorderThickness" Value="1"/>
+                            <Setter Property="BorderBrush" Value="Black"/>
+
+                            <Setter Property="Background" Value="LightGreen"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </ListBox.ItemContainerStyle>
+        </ListBox>
+        <Button HorizontalAlignment="Right" Margin="0,0,411,234" VerticalAlignment="Bottom" Width="151" Height="21" Content="Обновити інформацію" Foreground="#FFFFFFFF" Template="{DynamicResource GlassButton}" Click="Button_Clk_5" RenderTransformOrigin="0.286,0.121"/>
+    </Grid>
+</Window>
